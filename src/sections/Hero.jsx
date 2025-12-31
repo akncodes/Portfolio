@@ -64,7 +64,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <h2 className="text-gray-700 dark:text-gray-200 mb-4 text-base sm:text-xl md:text-2xl font-medium">
+            <h2 className="text-gray-700 dark:text-gray-200 mb-4 text-xl md:text-2xl font-medium">
               <span className="relative inline-block group overflow-hidden">
                 <span
                   className={clsx(
@@ -93,33 +93,35 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
             />
 
-            <p className="text-gray-600 dark:text-gray-400 mb-8 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
+            <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg leading-relaxed max-w-2xl">
               A wizard of code, weaving stories through projects and applications. I'm passionate about web development and an enthusiast for technology, constantly crafting web experiences and building tools that make an impact.
             </p>
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-              <motion.button
-                className="w-full sm:w-auto px-8 py-3 bg-linear-to-r from-rose-500 to-purple-500 text-white rounded-lg font-semibold shadow-lg hover:shadow-rose-500/50 transition-all duration-300 group relative overflow-hidden"
+              <motion.a
+                href="#experiences"
+                className="px-8 py-3 bg-linear-to-r from-rose-500 to-purple-500 text-white rounded-lg font-semibold shadow-lg hover:shadow-rose-500/50 transition-all duration-300 group relative overflow-hidden inline-block text-center w-full sm:w-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <span className="relative z-10">View My Work</span>
                 <div className="absolute inset-0 bg-linear-to-r from-purple-600 to-rose-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </motion.button>
+              </motion.a>
 
-              <motion.button
-                className="w-full sm:w-auto px-8 py-3 border-2 border-rose-500 text-rose-500 dark:text-rose-400 rounded-lg font-semibold hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-all duration-300 relative group"
+              <motion.a
+                href="#contact"
+                className="px-8 py-3 border-2 border-rose-500 text-rose-500 dark:text-rose-400 rounded-lg font-semibold hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-all duration-300 relative group inline-block text-center w-full sm:w-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <span className="relative z-10">Get In Touch</span>
                 <div className="absolute inset-0 border-2 border-rose-600 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300" />
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
 
           <motion.div
-            className="flex basis-full sm:basis-1/3 justify-center sm:justify-end mt-8 sm:mt-0"
+            className="flex basis-1/3 justify-center sm:justify-end"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -136,7 +138,7 @@ export default function Hero() {
                   transition={{ duration: 3, repeat: Infinity }}
                 />
 
-                <div className="relative flip-card w-32 h-32 sm:w-40 sm:h-40 perspective-[1000px] group cursor-pointer">
+                <div className="relative flip-card w-40 h-40 perspective-[1000px] group cursor-pointer">
                   <div className="relative w-full h-full transition-transform duration-500 transform-3d group-hover:transform-[rotateY(180deg)]">
                     <div className="absolute w-full h-full backface-hidden">
                       <img

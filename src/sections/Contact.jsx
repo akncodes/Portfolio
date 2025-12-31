@@ -51,7 +51,7 @@ const Contact = () => {
     }
   };
   return (
-    <section className="relative c-space section-spacing px-4 sm:px-10">
+    <section className="relative c-space section-spacing px-4 sm:px-10" id="contact">
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}
@@ -60,7 +60,7 @@ const Contact = () => {
         refresh
       />
       {showAlert && <Alert type={alertType} text={alertMessage} />}
-      
+      <h2 className="text-heading">Contact Me</h2>
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-center gap-8 lg:gap-12 w-full max-w-6xl mx-auto">
         {/* Social Icons Section - Top on mobile, Left on desktop */}
         <div className="flex flex-col items-center justify-center w-full lg:w-1/2">
