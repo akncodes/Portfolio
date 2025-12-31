@@ -19,7 +19,7 @@ const About = () => {
             </p>
             <button 
               className="z-10 px-4 py-2 mt-10 cursor-pointer hover:underline h-15 text-white rounded-md bg-primary text-sm md:text-base"
-              onClick={() => window.open('https://drive.google.com/file/d/1iMu2sIG_izsAMXtTBd9g5LWi54oGb8k6/view?usp=drive_link', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1BB7GpM4b92N0CUIDXnZaElCwb_bJDpcR/view?usp=sharing', '_blank')}
             >
               Download Resume
             </button>
