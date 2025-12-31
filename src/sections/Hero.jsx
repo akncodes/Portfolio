@@ -141,7 +141,7 @@ export default function Hero() {
                     <div className="absolute w-full h-full backface-hidden">
                       <img
                         alt="Profile Image"
-                        src="assets/profile.png"
+                        src="/assets/profile.png"
                         width={180}
                         height={180}
                         className="w-full h-full object-cover rounded-full shadow-2xl"
@@ -152,7 +152,7 @@ export default function Hero() {
                     <div className="absolute w-full h-full backface-hidden transform-[rotateY(180deg)]">
                       <img
                         alt="Back Image"
-                        src="assets/rickroll-roll.gif"
+                        src="/assets/rickroll-roll.gif"
                         width={180}
                         height={180}
                         className="w-full h-full object-cover rounded-full shadow-2xl"
