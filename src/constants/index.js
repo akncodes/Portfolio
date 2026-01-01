@@ -84,7 +84,7 @@ export const myProjects = [
       "Optimized for performance with efficient component architecture.",
       "Showcases projects, skills, and experience in a professional and engaging manner.",
     ],
-    href: "",
+    href: "https://akncodes.nubcoder.dev/",
     logo: "",
     image: "/assets/Portfolio.png",
     tags: [
@@ -130,34 +130,7 @@ export const myEducation = [
   },
 ];
 
-export const mySkills = {
-  languages: [
-    { name: "JavaScript (ES6)", proficiency: "Advanced" },
-    { name: "HTML5", proficiency: "Advanced" },
-    { name: "CSS3", proficiency: "Advanced" },
-    { name: "C++", proficiency: "Intermediate" },
-    { name: "Python", proficiency: "Intermediate" },
-  ],
-  webDevelopment: [
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "REST APIs",
-    "Responsive Design",
-    "Tailwind CSS",
-    "Bootstrap 5",
-  ],
-  tools: [
-    "Git",
-    "Postman",
-    "Linux",
-    "Windows",
-    "Version Control",
-    "Vite",
-    "ESLint",
-  ],
-};
+
 
 export const myAchievements = [
   {
@@ -177,28 +150,6 @@ export const myAchievements = [
   },
 ];
 
-export const mySocials = [
-  {
-    name: "GitHub",
-    href: "https://github.com/akncodes",
-    icon: "/assets/socials/github.svg",
-  },
-  {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/abhishekkumarnigam/",
-    icon: "/assets/socials/linkedIn.svg",
-  },
-  {
-    name: "Twitter",
-    href: "https://twitter.com/akncodes",
-    icon: "/assets/socials/twitter.svg",
-  },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/imabhishek40/",
-    icon: "/assets/socials/instagram.svg",
-  },
-];
 
 export const experiences = [
   {
