@@ -33,10 +33,9 @@ const About = () => {
         
         <div className="flex grid-default-color min-h-100 grid-5 relative">
           <div className="z-10 w-[50%]">
-            <p className="text-xl sm:text-2xl md:text-3xl">Teck Stack</p>
+            <p className="text-xl sm:text-2xl md:text-3xl">Tech Stack</p>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl mt-4">
-              I specialize in a variety of languages, frameworks, and tools taht
-              allow me to build robust and scalable applications
+              I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications. My expertise includes MERN stack development.
             </p>
           </div>
           <div className="relative left-[37%] inset-y-0 md:inset-y-9 w-full h-1 start-[50%] md:scale-125">

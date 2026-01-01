@@ -113,16 +113,85 @@ export const myProjects = [
 ];
 
 
+export const myEducation = [
+  {
+    school: "Madan Mohan Malaviya University of Technology",
+    degree: "B.Tech in Electrical Engineering",
+    duration: "Sep 2023 - Present",
+    location: "Gorakhpur, India",
+    details: "Core coursework includes Electrical Circuits, Electronics, Signals and Systems, Power Systems, Electrical Machines, and MATLAB programming.",
+  },
+  {
+    school: "Red Rose Senior Secondary School",
+    degree: "Senior Secondary (12th Grade)",
+    duration: "Completed May 2023",
+    location: "Lucknow, India",
+    major: "PCM-CS (Physics, Chemistry, Mathematics, Computer Science)",
+  },
+];
+
+export const mySkills = {
+  languages: [
+    { name: "JavaScript (ES6)", proficiency: "Advanced" },
+    { name: "HTML5", proficiency: "Advanced" },
+    { name: "CSS3", proficiency: "Advanced" },
+    { name: "C++", proficiency: "Intermediate" },
+    { name: "Python", proficiency: "Intermediate" },
+  ],
+  webDevelopment: [
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "REST APIs",
+    "Responsive Design",
+    "Tailwind CSS",
+    "Bootstrap 5",
+  ],
+  tools: [
+    "Git",
+    "Postman",
+    "Linux",
+    "Windows",
+    "Version Control",
+    "Vite",
+    "ESLint",
+  ],
+};
+
+export const myAchievements = [
+  {
+    title: "Full-Stack MMMUT Cultural Fest Website",
+    description: "Developed a complete full-stack cultural fest website using React, Express, MongoDB, and Tailwind CSS for ABHYUDAYA '25 with 500+ registered participants.",
+    year: 2024,
+  },
+  {
+    title: "Google Cloud Skills Boost Badges",
+    description: "Earned 29 Google Cloud Skills Boost badges through hands-on labs and practical learning (2024–2025), demonstrating expertise in cloud computing and infrastructure.",
+    year: 2025,
+  },
+  {
+    title: "AI Mock Interview Platform",
+    description: "Created an innovative voice-first AI mock interview platform inspired by Detroit: Become Human, integrating voice APIs and conversational AI.",
+    year: 2025,
+  },
+];
+
 export const mySocials = [
   {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
+    name: "GitHub",
+    href: "https://github.com/akncodes",
+    icon: "/assets/socials/github.svg",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ak-nigam/",
+    href: "https://www.linkedin.com/in/abhishekkumarnigam/",
     icon: "/assets/socials/linkedIn.svg",
+  },
+  {
+    name: "Twitter",
+    href: "https://twitter.com/akncodes",
+    icon: "/assets/socials/twitter.svg",
   },
   {
     name: "Instagram",

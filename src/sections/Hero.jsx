@@ -72,7 +72,7 @@ export default function Hero() {
                     'block transform transition-transform duration-500 group-hover:translate-y-full'
                   )}
                 >
-                  Web developer{' '}
+                  Web Developer & Student{' '}
                 </span>
                 <span
                   className={clsx(
@@ -80,10 +80,20 @@ export default function Hero() {
                     'absolute inset-0 block transform translate-y-full transition-transform duration-500 group-hover:translate-y-0'
                   )}
                 >
-                  And a Student
+                  3rd Year B.Tech, Electrical Engineering
                 </span>
               </span>
             </h2>
+
+            {/* Education badge */}
+            <div className="mb-4 inline-flex flex-wrap gap-2">
+              <span className="px-3 py-1 rounded-full text-sm font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">
+                🎓 MMMUT, Gorakhpur
+              </span>
+              <span className="px-3 py-1 rounded-full text-sm font-medium bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">
+                ⚡ Electrical Engineering
+              </span>
+            </div>
 
             {/* Divider line */}
             <motion.div
