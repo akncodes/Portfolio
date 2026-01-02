@@ -1,4 +1,3 @@
-import { mySocials } from "../constants";
 const Footer = () => {
   return (
     <section className="flex flex-col sm:flex-wrap sm:items-center justify-between gap-4 sm:gap-5 pb-3 text-xs sm:text-sm text-neutral-400 c-space">
