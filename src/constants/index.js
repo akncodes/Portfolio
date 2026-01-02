@@ -47,7 +47,7 @@ export const myProjects = [
       "Created human-like interview experience with feedback-driven system to reduce interview anxiety.",
       "Focused on AI integration and natural language processing for authentic interview simulation.",
     ],
-    href: "",
+    href: "https://intervue-ai-sand.vercel.app/",
     logo: "",
     image: "/assets/Intervue.png",
     tags: [
