@@ -10,7 +10,7 @@ export const myProjects = [
       "Designed responsive UI with Tailwind CSS, focusing on performance and scalability.",
       "Deployed for university-level fest with optimized user experience and navigation.",
     ],
-    href: "",
+    href: "https://abhyudaya.live/",
     logo: "",
     image: "/assets/Abhyudaya25.png",
     tags: [
