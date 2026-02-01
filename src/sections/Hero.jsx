@@ -9,7 +9,7 @@ export default function Hero() {
     'bg-linear-to-r from-rose-500 via-pink-500 to-purple-500 text-transparent bg-clip-text';
 
   return (
-    <main className="w-full h-screen flex items-center justify-center relative overflow-hidden">
+    <main className="w-full min-h-screen flex items-center justify-center relative overflow-hidden pt-20 sm:pt-0">
       {/* Animated background elements */}
       
      
@@ -24,8 +24,8 @@ export default function Hero() {
         color="#ffffff"
       />
 
-      <section className="w-full h-full flex items-center justify-center px-4 relative z-10">
-        <div className="flex flex-col-reverse sm:flex-row items-center justify-center w-full max-w-5xl gap-8 sm:gap-12">
+      <section className="w-full flex items-center justify-center px-3 sm:px-4 relative z-10 py-8 sm:py-0">
+        <div className="flex flex-col-reverse sm:flex-row items-center justify-center w-full max-w-5xl gap-4 sm:gap-12">
           <motion.div
             className="flex flex-col basis-full sm:basis-2/3 justify-start sm:pr-8"
             initial={{ opacity: 0, x: -50 }}
@@ -34,17 +34,17 @@ export default function Hero() {
           >
             {/* Badge */}
             <motion.div
-              className="mb-4 inline-flex"
+              className="mb-2 sm:mb-4 inline-flex"
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="px-3 py-1 rounded-full text-sm font-medium bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400">
+              <span className="px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium bg-rose-100 dark:bg-rose-900/30 text-rose-600 dark:text-rose-400">
                 ✨ Welcome to my portfolio
               </span>
             </motion.div>
 
-            <h1 className="font-peachi text-2xl sm:text-4xl md:text-6xl tracking-tight text-black dark:text-white mb-4 leading-tight">
+            <h1 className="font-peachi text-lg sm:text-3xl md:text-5xl lg:text-6xl tracking-tight text-black dark:text-white mb-2 sm:mb-4 leading-tight">
               <span className="relative inline-block group overflow-hidden">
                 <span
                   className={clsx(
@@ -64,7 +64,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <h2 className="text-gray-700 dark:text-gray-200 mb-4 text-xl md:text-2xl font-medium">
+            <h2 className="text-gray-700 dark:text-gray-200 mb-2 sm:mb-4 text-sm sm:text-lg md:text-xl font-medium">
               <span className="relative inline-block group overflow-hidden">
                 <span
                   className={clsx(
@@ -86,31 +86,31 @@ export default function Hero() {
             </h2>
 
             {/* Education badge */}
-            <div className="mb-4 inline-flex flex-wrap gap-2">
-              <span className="px-3 py-1 rounded-full text-sm font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">
+            <div className="mb-2 sm:mb-4 inline-flex flex-wrap gap-1 sm:gap-2">
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400">
                 🎓 MMMUT, Gorakhpur
               </span>
-              <span className="px-3 py-1 rounded-full text-sm font-medium bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-medium bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400">
                 ⚡ Electrical Engineering
               </span>
             </div>
 
             {/* Divider line */}
             <motion.div
-              className="w-20 h-1 bg-linear-to-r from-rose-500 to-purple-500 rounded-full mb-6"
+              className="w-16 sm:w-20 h-1 bg-linear-to-r from-rose-500 to-purple-500 rounded-full mb-3 sm:mb-6"
               initial={{ width: 0 }}
               animate={{ width: 80 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             />
 
-            <p className="text-gray-600 dark:text-gray-400 mb-8 text-lg leading-relaxed max-w-2xl">
+            <p className="text-gray-600 dark:text-gray-400 mb-4 sm:mb-8 text-xs sm:text-base leading-relaxed max-w-2xl">
               A wizard of code, weaving stories through projects and applications. I'm passionate about web development and an enthusiast for technology, constantly crafting web experiences and building tools that make an impact.
             </p>
 
-            <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-4">
               <motion.a
                 href="#experiences"
-                className="px-8 py-3 bg-linear-to-r from-rose-500 to-purple-500 text-white rounded-lg font-semibold shadow-lg hover:shadow-rose-500/50 transition-all duration-300 group relative overflow-hidden inline-block text-center w-full sm:w-auto"
+                className="px-4 sm:px-8 py-2 sm:py-3 bg-linear-to-r from-rose-500 to-purple-500 text-white rounded-lg font-semibold text-sm sm:text-base shadow-lg hover:shadow-rose-500/50 transition-all duration-300 group relative overflow-hidden inline-block text-center w-full sm:w-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -120,7 +120,7 @@ export default function Hero() {
 
               <motion.a
                 href="#contact"
-                className="px-8 py-3 border-2 border-rose-500 text-rose-500 dark:text-rose-400 rounded-lg font-semibold hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-all duration-300 relative group inline-block text-center w-full sm:w-auto"
+                className="px-4 sm:px-8 py-2 sm:py-3 border-2 border-rose-500 text-rose-500 dark:text-rose-400 rounded-lg font-semibold text-sm sm:text-base hover:bg-rose-50 dark:hover:bg-rose-900/20 transition-all duration-300 relative group inline-block text-center w-full sm:w-auto"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -131,7 +131,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.div
-            className="flex basis-1/3 justify-center sm:justify-end"
+            className="flex basis-full sm:basis-1/3 justify-center sm:justify-end"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -143,12 +143,12 @@ export default function Hero() {
               <div className="relative">
                 {/* Glow effect */}
                 <motion.div
-                  className="absolute inset-0 w-40 h-40 bg-linear-to-r from-rose-500/30 to-purple-500/30 rounded-full blur-2xl"
+                  className="absolute inset-0 w-24 sm:w-32 md:w-40 h-24 sm:h-32 md:h-40 bg-linear-to-r from-rose-500/30 to-purple-500/30 rounded-full blur-2xl"
                   animate={{ scale: [1, 1.2, 1] }}
                   transition={{ duration: 3, repeat: Infinity }}
                 />
 
-                <div className="relative flip-card w-40 h-40 perspective-[1000px] group cursor-pointer">
+                <div className="relative flip-card w-24 sm:w-32 md:w-40 h-24 sm:h-32 md:h-40 perspective-[1000px] group cursor-pointer">
                   <div className="relative w-full h-full transition-transform duration-500 transform-3d group-hover:transform-[rotateY(180deg)]">
                     <div className="absolute w-full h-full backface-hidden">
                       <img
