@@ -1,8 +1,8 @@
 import { IProject } from '@/types';
 
 import { IconType } from 'react-icons';
-import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaLinux, FaPython, FaDatabase, FaServer, FaBrain } from 'react-icons/fa';
-import { SiJavascript, SiTailwindcss, SiGreensock, SiFramer, SiExpress, SiMongodb, SiSqlite, SiPostman, SiCplusplus, SiTypescript, SiDjango, SiVite, SiNextdotjs, SiSass } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaLinux, FaPython, FaDatabase, FaBrain } from 'react-icons/fa';
+import { SiJavascript, SiTailwindcss, SiGreensock, SiFramer, SiExpress, SiMongodb, SiPostman, SiCplusplus, SiTypescript, SiDjango, SiVite, SiNextdotjs, SiSass } from 'react-icons/si';
 import { TbBrandVscode, TbApi } from 'react-icons/tb';
 
 interface ProjectTag {
