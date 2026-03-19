@@ -30,7 +30,11 @@ const robotoFlex = Roboto({
 
 export const metadata: Metadata = {
     title: 'Portfolio - Abhishek Kumar Nigam',
-    description: 'Personal portfolio of Abhishek Kumar Nigam',
+    description:
+        'Personal portfolio of Abhishek Kumar Nigam, a frontend developer. Showcasing projects, skills, and experience in web development.',
+    icons: {
+        icon: '/logo.png',
+    },
 };
 
 export default function RootLayout({
@@ -39,7 +43,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <GoogleAnalytics gaId="G-MHLY1LNGY5" />
             <Script id="hotjar" strategy="afterInteractive">
                 {`(function(h,o,t,j,a,r){
