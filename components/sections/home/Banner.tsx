@@ -222,7 +222,8 @@ const Banner = () => {
                             <span
                                 className="block"
                                 style={{
-                                    background: 'linear-gradient(160deg, hsl(var(--primary)) 30%, hsl(var(--primary)/55%) 100%)',
+                                    background:
+                                        'linear-gradient(160deg, hsl(var(--primary)) 30%, hsl(var(--primary)/55%) 100%)',
                                     WebkitBackgroundClip: 'text',
                                     WebkitTextFillColor: 'transparent',
                                     backgroundClip: 'text',
@@ -317,7 +318,8 @@ const Banner = () => {
                                     color: 'hsl(0 0% 6%)',
                                     letterSpacing: '0.14em',
                                     fontSize: '0.9rem',
-                                    boxShadow: '0 2px 12px rgba(0,0,0,0.35), 0 1px 0 rgba(255,255,255,0.5) inset',
+                                    boxShadow:
+                                        '0 2px 12px rgba(0,0,0,0.35), 0 1px 0 rgba(255,255,255,0.5) inset',
                                 }}
                             >
                                 Hire Me
@@ -336,7 +338,8 @@ const Banner = () => {
                                     border: '1px solid rgba(255,255,255,0.1)',
                                     letterSpacing: '0.14em',
                                     fontSize: '0.9rem',
-                                    boxShadow: '0 4px 16px rgba(0,0,0,0.2), 0 1px 0 rgba(255,255,255,0.06) inset',
+                                    boxShadow:
+                                        '0 4px 16px rgba(0,0,0,0.2), 0 1px 0 rgba(255,255,255,0.06) inset',
                                 }}
                             >
                                 View Projects

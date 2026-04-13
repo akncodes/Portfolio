@@ -39,7 +39,6 @@ const ProjectDetails = ({ project }: Props) => {
         { scope: containerRef },
     );
 
-    // blur info div and make it smaller on scroll
     useGSAP(
         () => {
             if (window.innerWidth < 992) return;
@@ -48,7 +47,6 @@ const ProjectDetails = ({ project }: Props) => {
                 filter: 'blur(3px)',
                 autoAlpha: 0,
                 scale: 0.9,
-                // position: 'sticky',
                 scrollTrigger: {
                     trigger: '#info',
                     start: 'bottom bottom',
@@ -62,7 +60,6 @@ const ProjectDetails = ({ project }: Props) => {
         { scope: containerRef },
     );
 
-    // parallax effect on images
     useGSAP(
         () => {
             gsap.utils
@@ -76,7 +73,6 @@ const ProjectDetails = ({ project }: Props) => {
                             start: () => (i ? 'top bottom' : 'top 50%'),
                             end: 'bottom top',
                             scrub: true,
-                            // invalidateOnRefresh: true, // to make it responsive
                         },
                     });
                 });

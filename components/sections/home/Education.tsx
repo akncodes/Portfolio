@@ -1,6 +1,6 @@
 'use client';
 import SectionTitle from '@/components/SectionTitle';
-import { MY_EXPERIENCE } from '@/lib/data';
+import { myEducation } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
@@ -8,7 +8,7 @@ import { useRef } from 'react';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const Experiences = () => {
+const Education = () => {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useGSAP(
@@ -16,14 +16,14 @@ const Experiences = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: containerRef.current,
-                    start: 'top 60%',
+                    start: 'top 70%',
                     end: 'bottom 50%',
                     toggleActions: 'restart none none reverse',
                     scrub: 1,
                 },
             });
 
-            tl.from('.experience-item', {
+            tl.from('.education-item', {
                 y: 50,
                 opacity: 0,
                 stagger: 0.3,
@@ -52,32 +52,44 @@ const Experiences = () => {
     );
 
     return (
-        <section className="py-section" id="my-experience">
+        <section className="py-section" id="my-education">
             <div className="container" ref={containerRef}>
-                <SectionTitle title="My Experience" />
+                <SectionTitle title="My Education" />
 
-                <div className="grid gap-14">
-                    {MY_EXPERIENCE.map((item) => (
-                        <div key={item.title} className="experience-item border-b border-white/10 pb-10 last:border-0 last:pb-0">
+                <div className="grid gap-14 mt-10">
+                    {myEducation.map((item) => (
+                        <div
+                            key={item.degree}
+                            className="education-item border-b border-white/10 pb-10 last:border-0 last:pb-0"
+                        >
                             <div className="flex justify-between items-start max-md:flex-col mb-4">
                                 <div>
                                     <p className="text-xl text-muted-foreground">
-                                        {item.company}
+                                        {item.school}
                                     </p>
-                                    <p className="text-4xl md:text-5xl font-anton leading-none mt-3.5 mb-2.5">
-                                        {item.title}
+                                    <p className="text-3xl md:text-5xl font-anton leading-[1.2] mt-3.5 mb-2.5">
+                                        {item.degree}
                                     </p>
                                 </div>
-                                <p className="text-lg text-muted-foreground mt-2 md:mt-0">
-                                    {item.duration}
-                                </p>
+                                <div className="text-left md:text-right mt-2 md:mt-0">
+                                    <p className="text-lg text-muted-foreground">
+                                        {item.duration}
+                                    </p>
+                                    <p className="text-md text-muted-foreground mt-1">
+                                        {item.location}
+                                    </p>
+                                </div>
                             </div>
-                            {item.contents && item.contents.length > 0 && (
-                                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                                    {item.contents.map((point, index) => (
-                                        <li key={index} className="text-base leading-relaxed">{point}</li>
-                                    ))}
-                                </ul>
+
+                            {item.major && (
+                                <p className="text-muted-foreground text-md mb-2">
+                                    Major: {item.major}
+                                </p>
+                            )}
+                            {item.details && (
+                                <p className="text-muted-foreground text-md leading-relaxed">
+                                    {item.details}
+                                </p>
                             )}
                         </div>
                     ))}
@@ -87,4 +99,4 @@ const Experiences = () => {
     );
 };
 
-export default Experiences;
+export default Education;

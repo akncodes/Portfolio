@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React from 'react';
 
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const AboutMe = () => {
     const container = React.useRef<HTMLDivElement>(null);
@@ -73,10 +73,19 @@ const AboutMe = () => {
                     <div className="md:col-span-8 md:pl-12 lg:pl-20">
                         <div className="text-lg md:text-xl text-muted-foreground/80 max-w-[600px] leading-loose">
                             <p className="slide-up-and-fade">
-                                I’m a Web Developer dedicated to turning ideas into scalable and impactful digital solutions, with a strong focus on building clean, efficient, and user-friendly applications. I enjoy crafting seamless experiences that combine functionality with thoughtful design.
+                                I’m a Web Developer dedicated to turning ideas
+                                into scalable and impactful digital solutions,
+                                with a strong focus on building clean,
+                                efficient, and user-friendly applications. I
+                                enjoy crafting seamless experiences that combine
+                                functionality with thoughtful design.
                             </p>
                             <p className="mt-6 slide-up-and-fade">
-                                My approach emphasizes performance, responsiveness, and accessibility, ensuring that every product not only looks good but also performs reliably and meets real-world user and business needs.
+                                My approach emphasizes performance,
+                                responsiveness, and accessibility, ensuring that
+                                every product not only looks good but also
+                                performs reliably and meets real-world user and
+                                business needs.
                             </p>
                         </div>
                     </div>
