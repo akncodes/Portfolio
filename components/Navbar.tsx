@@ -1,8 +1,8 @@
 'use client';
 import { cn } from '@/lib/utils';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { MoveUpRight } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
 
 const COLORS = [
@@ -39,6 +39,37 @@ const MENU_LINKS = [
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const router = useRouter();
+    const pathname = usePathname();
+
+    const smoothScrollToHash = (hash: string) => {
+        const id = hash.replace('#', '');
+        const target = document.getElementById(id);
+
+        if (!target) return;
+
+        const y = target.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+    };
+
+    useEffect(() => {
+        if (pathname !== '/') return;
+
+        const pendingHash = sessionStorage.getItem('pending-scroll-hash');
+        const hash = pendingHash || window.location.hash;
+
+        if (!hash) return;
+
+        const timerId = window.setTimeout(() => {
+            smoothScrollToHash(hash);
+            window.history.replaceState(null, '', `/${hash}`);
+
+            if (pendingHash) {
+                sessionStorage.removeItem('pending-scroll-hash');
+            }
+        }, 80);
+
+        return () => window.clearTimeout(timerId);
+    }, [pathname]);
 
     return (
         <>
@@ -126,7 +157,32 @@ const Navbar = () => {
                                     <li key={link.name}>
                                         <button
                                             onClick={() => {
-                                                router.push(link.url);
+                                                const [, hashPart] =
+                                                    link.url.split('#');
+
+                                                if (hashPart) {
+                                                    const hash = `#${hashPart}`;
+
+                                                    if (pathname === '/') {
+                                                        window.history.replaceState(
+                                                            null,
+                                                            '',
+                                                            `/${hash}`,
+                                                        );
+                                                        smoothScrollToHash(
+                                                            hash,
+                                                        );
+                                                    } else {
+                                                        sessionStorage.setItem(
+                                                            'pending-scroll-hash',
+                                                            hash,
+                                                        );
+                                                        router.push('/');
+                                                    }
+                                                } else {
+                                                    router.push(link.url);
+                                                }
+
                                                 setIsMenuOpen(false);
                                             }}
                                             className="group text-xl flex items-center gap-3"

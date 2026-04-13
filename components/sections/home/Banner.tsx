@@ -198,7 +198,7 @@ const Banner = () => {
             {/* ── Main content ── */}
             <div
                 ref={containerRef}
-                className="container relative z-10 flex flex-col justify-center"
+                className="container relative z-1 flex flex-col justify-center"
                 style={{
                     minHeight: '100svh',
                     paddingTop: '6rem',
