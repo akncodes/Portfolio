@@ -60,7 +60,7 @@ export const GENERAL_INFO = {
     instagram: 'https://www.instagram.com/imabhishek40/',
     github: 'https://github.com/akncodes',
     resumeLink:
-        'https://drive.google.com/file/d/1a_K8V4XKP83rjbKWJfNuRJ87UcjFBVa6/view?usp=sharing',
+        'https://drive.google.com/file/d/1OJmEWRq9Hz9yO7MeKRR6EGBegOVxgqXO/view?usp=sharing',
     portfolioUrl: 'https://akncodes.nubcoder.dev/',
     twitter: 'https://x.com/AKNCODES',
     leetcode: 'https://leetcode.com/u/akncode/',
