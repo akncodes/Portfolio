@@ -1,8 +1,8 @@
 import { IProject } from '@/types';
 
 import { IconType } from 'react-icons';
-import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaLinux, FaPython, FaDatabase, FaBrain } from 'react-icons/fa';
-import { SiJavascript, SiTailwindcss, SiGreensock, SiFramer, SiExpress, SiMongodb, SiPostman, SiCplusplus, SiTypescript, SiDjango, SiVite, SiNextdotjs, SiSass } from 'react-icons/si';
+import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaLinux, FaPython, FaDatabase, FaBrain, FaAws } from 'react-icons/fa';
+import { SiJavascript, SiTailwindcss, SiGreensock, SiFramer, SiExpress, SiMongodb, SiPostman, SiCplusplus, SiTypescript, SiDjango, SiVite, SiNextdotjs, SiSass, SiJenkins, SiTerraform, SiGooglecloud } from 'react-icons/si';
 import { TbBrandVscode, TbApi } from 'react-icons/tb';
 
 interface ProjectTag {
@@ -78,6 +78,40 @@ export const SOCIAL_LINKS = [
 ];
 
 export const MY_STACK = {
+    languages: [
+        { name: 'JavaScript', icon: SiJavascript },
+        { name: 'TypeScript', icon: SiTypescript },
+        { name: 'Python', icon: FaPython },
+        { name: 'C++', icon: SiCplusplus },
+        { name: 'Bash', icon: FaLinux },
+    ],
+    development: [
+        { name: 'React.js', icon: FaReact },
+        { name: 'Next.js', icon: SiNextdotjs },
+        { name: 'HTML5', icon: FaHtml5 },
+        { name: 'CSS3', icon: FaCss3Alt },
+        { name: 'Tailwind CSS', icon: SiTailwindcss },
+        { name: 'Bootstrap 5', icon: FaBootstrap },
+        { name: 'Node.js', icon: FaNodeJs },
+        { name: 'GSAP', icon: SiGreensock },
+    ],
+    devops: [
+        { name: 'Jenkins', icon: SiJenkins },
+        { name: 'Git', icon: FaGitAlt },
+        { name: 'GitHub', icon: FaGithub },
+        { name: 'CI/CD', icon: TbApi },
+        { name: 'Terraform', icon: SiTerraform },
+    ],
+    cloud: [
+        { name: 'AWS', icon: FaAws },
+        { name: 'Google Cloud', icon: SiGooglecloud },
+    ],
+    ai: [
+        { name: 'LLM', icon: FaBrain },
+        { name: 'LLM integration', icon: FaBrain },
+        { name: 'AI workflow', icon: FaBrain },
+        { name: 'AI agents', icon: FaBrain },
+    ],
     frontend: [
         { name: 'JavaScript', icon: SiJavascript },
         { name: 'TypeScript', icon: SiTypescript },
@@ -276,6 +310,43 @@ export const myProjects: MyProjectItem[] = [
             },
         ],
     },
+    {
+        id: 5,
+        title: 'Automated Infrastructure Provisioning Using Terraform and Jenkins',
+        description:
+            'Built an IaC workflow using Terraform to provision and manage AWS cloud infrastructure with automated validation and deployment.',
+        subDescription: [
+            'Developed a Jenkins CI/CD pipeline to automate Terraform validation, planning, approval, and deployment.',
+            'Provisioned and managed AWS infrastructure efficiently using Infrastructure as Code principles.',
+            'Worked as an organising team member for the university cultural fest while building and deploying this project workflow.',
+            'September 2026',
+        ],
+        href: 'https://github.com/akncodes/Automated-Infrastructure-Provisioning-Using-Terraform-and-Jenkins/tree/main',
+        logo: '',
+        image: '/Portfolio.png',
+        tags: [
+            {
+                id: 1,
+                name: 'Terraform',
+                path: SiTerraform,
+            },
+            {
+                id: 2,
+                name: 'Jenkins',
+                path: SiJenkins,
+            },
+            {
+                id: 3,
+                name: 'AWS',
+                path: FaAws,
+            },
+            {
+                id: 4,
+                name: 'CI/CD',
+                path: TbApi,
+            },
+        ],
+    },
 ];
 
 const projectYears: Record<number, number> = {
@@ -283,6 +354,7 @@ const projectYears: Record<number, number> = {
     2: 2025,
     3: 2026,
     4: 2026,
+    5: 2026,
 };
 
 const slugify = (value: string) =>
