@@ -327,7 +327,7 @@ const Banner = () => {
 
                             {/* Refined Ghost CTA — View Projects */}
                             <a
-                                href="#projects"
+                                href="#selected-projects"
                                 className="btn-ghost-refined inline-flex items-center justify-center font-anton uppercase rounded-lg select-none"
                                 style={{
                                     height: '52px',
