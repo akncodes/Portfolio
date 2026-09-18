@@ -1,8 +1,38 @@
 import { IProject } from '@/types';
 
 import { IconType } from 'react-icons';
-import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaNodeJs, FaGitAlt, FaGithub, FaLinux, FaPython, FaDatabase, FaBrain, FaAws } from 'react-icons/fa';
-import { SiJavascript, SiTailwindcss, SiGreensock, SiFramer, SiExpress, SiMongodb, SiPostman, SiCplusplus, SiTypescript, SiDjango, SiVite, SiNextdotjs, SiSass, SiJenkins, SiTerraform, SiGooglecloud } from 'react-icons/si';
+import {
+    FaReact,
+    FaHtml5,
+    FaCss3Alt,
+    FaBootstrap,
+    FaNodeJs,
+    FaGitAlt,
+    FaGithub,
+    FaLinux,
+    FaPython,
+    FaDatabase,
+    FaBrain,
+    FaAws,
+} from 'react-icons/fa';
+import {
+    SiJavascript,
+    SiTailwindcss,
+    SiGreensock,
+    SiFramer,
+    SiExpress,
+    SiMongodb,
+    SiPostman,
+    SiCplusplus,
+    SiTypescript,
+    SiDjango,
+    SiVite,
+    SiNextdotjs,
+    SiSass,
+    SiJenkins,
+    SiTerraform,
+    SiGooglecloud,
+} from 'react-icons/si';
 import { TbBrandVscode, TbApi } from 'react-icons/tb';
 
 interface ProjectTag {
@@ -53,7 +83,8 @@ export const GENERAL_INFO = {
         'Madan Mohan Malaviya University of Technology (MMMUT), Gorakhpur, India',
     email: 'imabhishek40@gmail.com',
     availability: 'Available for opportunities',
-    linkedInProfile: 'https://www.linkedin.com/in/abhishek-kumar-nigam-665925294/',
+    linkedInProfile:
+        'https://www.linkedin.com/in/abhishek-kumar-nigam-665925294/',
     linkedInContact: 'https://www.linkedin.com/in/ak-nigam/',
     whatsapp: 'https://api.whatsapp.com/send?phone=918009615096',
     telegram: 'https://t.me/aknocodes',
